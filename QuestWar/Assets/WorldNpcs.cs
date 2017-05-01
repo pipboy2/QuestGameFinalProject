@@ -49,7 +49,7 @@ namespace QuestWar
 
             new Civillian
             {
-                Id = 2,
+                Id = 5,
                 Name = "The King",
                 WorldAreaLocationID = 4,
                 Description = "King of Bree",
@@ -61,12 +61,46 @@ namespace QuestWar
                 }
             },
 
+            new Civillian
+            {
+                Id = 3,
+                Name = "Prisoner",
+                WorldAreaLocationID = 3,
+                Description = "This man is cuffed to the very stones of the wall, looks like he is barely alive.",
+                Messages = new List<string>
+                {
+                    "uhhhhhhhhh........",
+                    "help me....",
+                    "..."
+                }
+            },
+
+            new Civillian
+            {
+                Id = 6,
+                Name = "White Wizzard",
+                WorldAreaLocationID = 6,
+                Description = "A man that is entirely covered in white and silver robes.",
+                Messages = new List<string>
+                {
+                    "Its dangerous to go alone. Take this!",
+                    "All your base are belong to us.",
+                    "Have you seen a gold ring around here?"
+                }
+            },
+
             new MonsterNpc
             {
-                Id = 4,
+                Id = 8,
                 Name = "Zombie",
                 WorldAreaLocationID = 3,
                 Description = "A figure of a Zombie with flesh ripped from its body. The only thing you notice is one eye left in its socket.",
+                Messages = new List<string>
+                {
+                    "Take this key to open the Dark Dungeon!",
+                    "You must help us!",
+                    "Save these lands"
+                },
                 RemoveWhenDefeated = true,
                 SpawnMonstersForBattle = () => new List<Monster>()
                 {
@@ -83,7 +117,7 @@ namespace QuestWar
 
             new MonsterNpc
             {
-                Id = 5,
+                Id = 9,
                 Name = "The Dark Horde",
                 WorldAreaLocationID = 6,
                 Description = "The unbeatle master of the castle. Keeps spawning its dark brood.",
