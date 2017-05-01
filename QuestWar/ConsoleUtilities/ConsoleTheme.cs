@@ -62,7 +62,7 @@ namespace QuestWar
 
         //
         // input box colors
-        //
+        //s
         public static ConsoleColor InputBoxBackgroundColor = ConsoleColor.Black;
         public static ConsoleColor InputBoxForegroundColor = ConsoleColor.Gray;
         public static ConsoleColor InputBoxErrorMessageForegroundColor = ConsoleColor.Red;
