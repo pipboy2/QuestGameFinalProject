@@ -35,6 +35,10 @@ namespace TheAionProject.Models
             }
         }
 
+        //
+        // win lose feedback
+        //
+
         private BattleResult GetResult()
         {
             if (Player.HP <= 0)
@@ -47,6 +51,10 @@ namespace TheAionProject.Models
             }
             return BattleResult.Continue;
         }
+
+        //
+        // player choice to attack
+        //
 
         private int ChooseAttackType()
         {
@@ -71,6 +79,10 @@ namespace TheAionProject.Models
             return result;
         }
 
+        //
+        // target selection
+        //
+
         private int SelectTarget()
         {
             int result = -1;
@@ -93,6 +105,10 @@ namespace TheAionProject.Models
             Console.WriteLine();
             return result;
         }
+
+        //
+        // random roll for attacking
+        //
 
         private int PerformAttack(int attackType)
         {
@@ -158,6 +174,11 @@ namespace TheAionProject.Models
             return damage;
         }
 
+
+        //
+        // feedbackk in console for attacking resaults
+        //
+
         private void ProcessPlayerAttackOnMonster(int damageDone, int targetIdx)
         {
             var target = Targets[targetIdx];
@@ -178,6 +199,11 @@ namespace TheAionProject.Models
             Player = player;
             Targets = targets;
         }
+
+
+        //
+        // battle conditions response and escape
+        //
 
         public BattleResult Start()
         {
